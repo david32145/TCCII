@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:id="@+id/increase_metric_layout"
+    android:paddingHorizontal="@dimen/sp_24px"
+    android:paddingVertical="@dimen/sp_72px"
+    tools:context=".EditMetricActivity">
+
+    <br.ufc.crateus.tcc.components.MyImageButton
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:contentDescription="@string/back_button_content_description"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <br.ufc.crateus.tcc.components.MyMaterialTextView
+        android:id="@+id/MetricTitle"
+        style="@style/Headline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_32px"
+        android:textColor="@color/neutral_01"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        tools:text="Editar Meta de Passos" />
+
+
+    <br.ufc.crateus.tcc.components.MyTextInputLayout
+        android:id="@+id/textInputLayoutForMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_64px"
+        android:hint="@string/edit_metric_edit_text_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MetricTitle"
+        app:placeholderText="@string/edit_metric_edit_text_placeholder"
+        android:contentDescription="@string/edit_metric_edit_text_placeholder">
+
+        <br.ufc.crateus.tcc.components.MyTextInput
+            android:id="@+id/textInputMetric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/neutral_08"
+            android:inputType="number"
+            android:contentDescription="@string/edit_metric_edit_text_placeholder"/>
+    </br.ufc.crateus.tcc.components.MyTextInputLayout>
+
+    <br.ufc.crateus.tcc.components.MyButton
+        android:id="@+id/saveButton"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_64px"
+        android:contentDescription="@string/increase_metric_save_content_description"
+        android:text="@string/edit_metric_save_button_text"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutForMetric" />
+</androidx.constraintlayout.widget.ConstraintLayout>

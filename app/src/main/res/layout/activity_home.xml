@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".HomeActivity"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_home_layout"
+        android:paddingVertical="@dimen/sp_72px"
+        android:paddingHorizontal="@dimen/sp_24px"
+        android:layout_height="match_parent">
+
+    <br.ufc.crateus.tcc.components.MyMaterialTextView
+        android:id="@+id/pageTitle"
+        style="@style/Headline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page_title"
+        android:textColor="@color/neutral_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.ufc.crateus.tcc.components.MyAppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_64px"
+        android:contentDescription="@string/home_logo_content_description"
+        android:src="@drawable/illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageTitle" />
+
+    <br.ufc.crateus.tcc.components.MyTextInputLayout
+        android:id="@+id/textInputLayoutForMetric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_64px"
+        android:hint="@string/home_input_name_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:placeholderText="@string/home_input_name_placeholder">
+
+        <br.ufc.crateus.tcc.components.MyTextInput
+            android:id="@+id/textInputMetric"
+            android:layout_width="match_parent"
+            android:text="David"
+            android:contentDescription="Digitar o seu nome"
+            android:layout_height="wrap_content"
+            android:background="@color/neutral_08" />
+    </br.ufc.crateus.tcc.components.MyTextInputLayout>
+
+    <br.ufc.crateus.tcc.components.MyButton
+        android:id="@+id/enterInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
+        android:text="@string/home_button_enter_in"
+        android:contentDescription="@string/home_enter_in_content_description"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutForMetric"
+        android:layout_marginTop="@dimen/sp_64px"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

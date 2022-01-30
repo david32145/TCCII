@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sp_24px">16dp</dimen>
+    <dimen name="sp_40px">26.67dp</dimen>
+    <dimen name="sp_72px">48dp</dimen>
+    <dimen name="sp_64px">42.67dp</dimen>
+    <dimen name="sp_56px">37.33dp</dimen>
+    <dimen name="sp_16px">10.67dp</dimen>
+    <dimen name="rds_8px">5.33dp</dimen>
+    <dimen name="rds_20px">20dp</dimen>
+    <dimen name="sp_32px">32dp</dimen>
+</resources>

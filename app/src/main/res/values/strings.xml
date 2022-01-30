@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fitness App</string>
+    <string name="home_input_name_hint">Nome</string>
+    <string name="home_input_name_placeholder">Digite seu nome</string>
+    <string name="home_button_enter_in">Entrar</string>
+    <string name="home_page_title">Fitness App</string>
+    <string name="dashboard_page_title">Minhas Atividades</string>
+    <string name="edit_metric_edit_text_hint">Meta Atual</string>
+    <string name="edit_metric_edit_text_placeholder">Editar métrica da atividade</string>
+    <string name="edit_metric_save_button_text">Salvar</string>
+    <string name="home_logo_content_description">logo do app</string>
+    <string name="home_enter_in_content_description">entrar na aplicação</string>
+    <string name="dashboard_edit_step_goal_content_description">editar a meta de passos</string>
+    <string name="dashboard_edit_kcal_goal_content_description">editar meta de calorias</string>
+    <string name="dashboard_edit_workout_goal_content_description">editar meta de horas de exercício</string>
+    <string name="dashboard_add_step_content_description">Adicionar passos ao meu histórico diário</string>
+    <string name="dashboard_add_kcal_content_description">Adicionar calorias ao meu histórico diário</string>
+    <string name="dashboard_add_workout_content_description">Adicionar horas de exercício ao meu histórico diário</string>
+    <string name="back_button_content_description">Voltar para a página anterior</string>
+    <string name="edit_metric_save_content_description">Salvar dados para a nova meta</string>
+    <string name="increase_metric_save_content_description">Salvar atualização na meta</string>
+    <string name="accessibility_service_label">Serviço de Acessibilidade</string>
+    <string name="accessibility_service_description">Serviço criado para auxiliar pessoas com deficiência visual, e avaliar o uso dos serviços de acessibilidade</string>
+</resources>
